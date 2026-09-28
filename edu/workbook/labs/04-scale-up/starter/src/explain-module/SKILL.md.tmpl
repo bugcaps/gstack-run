@@ -1,0 +1,17 @@
+---
+name: explain-module
+description: |
+  낯선 모듈을 file:line 근거와 함께 설명한다. 코드는 수정하지 않는다.
+  Use when asked to "이 모듈 설명해줘", "코드 구조 파악", or "explain this module".
+allowed-tools:
+  - Read
+  - Grep
+  - Glob
+---
+
+# /explain-module
+
+{{COMMON}}
+
+## 절차
+1. 범위 확정 → 2. 진입점 → 3. 데이터 흐름 → 4. 외부 의존·위험 지점
